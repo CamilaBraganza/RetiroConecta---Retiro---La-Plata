@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <title>RetiroConecta</title>
+        <link rel="stylesheet" href="servicios.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+       <nav> 
+         <p>Ruta 1</p>
+                    
+         <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pasajes.html">Pasajes</a></li>
+            <li><a href="recorridos.html">Recorridos</a></li>
+            <li><a href="servicios.html">Servicios disponibles</a></li>
+        </ul>
+       </nav>
+
+    </header>
+
+    <main>
+        <div class="posicionamiento">
+           <p>Terminal Retiro - La Plata / Servicios disponibles</p>
+        </div>
+
+        <section class="serviciosdisponibles">
+            <div class="Textoservicios">
+                <h1>Servicios disponibles</h1>
+                <p>En RetiroConecta, nos enorgullece ofrecer una amplia gama de servicios para hacer que tu viaje sea lo más cómodo y agradable posible. Desde la compra de pasajes en línea hasta la asistencia personalizada, estamos aquí para ayudarte en cada paso del camino.</p>
+                
+                <h2 class="subtitulo-formulario">Localizá tu micro</h2>
+                <p>Si querés saber la ubicación de tu micro o el estado de tu viaje, indicanos tu pasaje.</p>
+            </div>
+
+            <form action="FormularioLocalizacion.html" method="post">
+                <label for="numero de boleto">Número de boleto:</label>
+                <input type="text" id="numero de boleto" name="numero de boleto" required class="selector">
+                <button type="submit">Localizar micro</button>
+            </form>
+        </section>
+
+        <hr class="linea-divisoria">
+
+        <section class="asistencia">
+            <h2>Asistencia personalizada</h2>
+            <p>Si necesitás ayuda con tu viaje, nuestro equipo de atención al cliente está disponible para brindarte asistencia personalizada. Ya sea que tengas preguntas sobre tu reserva, necesites información sobre los servicios a bordo o requieras asistencia especial, estamos aquí para ayudarte.</p>
+            <button type="button" class="button-servicios">Contactar asistencia</button>
+        </section> 
+
+        <hr class="linea-divisoria">
+
+        <section class="servicios">
+            <h2>Servicios a bordo</h2>
+            <p class="serviciosabordo">Nuestros micros están equipados con una variedad de servicios para garantizar tu comodidad durante el viaje. <br> Queremos que tu experiencia de viaje sea lo más placentera posible.</p> 
+            
+            <ul class="lista-servicios">
+                <li>Disfrutá de asientos reclinables.</li>
+                <li>Aire acondicionado.</li>
+                <li>Wi-Fi gratuito para mantenerte conectado durante el viaje.</li>
+                <li>Entretenimiento a bordo.</li>
+            </ul>
+        </section>
+
+        <hr class="linea-divisoria">
+
+        <section class="accesibilidad">
+            <h2>Accesibilidad del Servicio</h2>
+            <p>Comprometidos con la inclusión, nuestras estaciones y micros están adaptados para garantizar la autonomía y comodidad de todos los pasajeros:</p>
+            
+            <ul class="lista">
+                <li class="accesib"><strong>Rampas y Arrodillamiento:</strong> Todas las unidades asignadas a la ruta Retiro - La Plata cuentan con sistema de suspensión neumática para el arrodillamiento del colectivo y rampas automatizadas de acceso rápido.</li>
+                <li class="accesib"><strong>Señalización Clara:</strong> Cartelería frontal y lateral de las unidades con luces LED de alta visibilidad que indican de forma clara el destino "LA PLATA x AUTOPISTA".</li>
+                <li class="accesib"><strong>Espacios para Sillas de Ruedas:</strong> Interior del micro equipado con dos espacios exclusivos y señalizados para pasajeros en silla de ruedas, con anclajes de seguridad de tres puntos y botones de parada a una altura accesible.</li>
+            </ul>
+        </section>
+                
+    </main>
+
+    <footer>
+        <div>
+            <p class="Derechos">© 2026 RetiroConecta - Ruta 1. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+    
+</body>

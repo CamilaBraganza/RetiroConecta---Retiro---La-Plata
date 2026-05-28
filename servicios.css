@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+header {
+    background-color: hsl(60, 68%, 37%);
+}
+
+nav {
+    display: flex;
+    color: #F5F5F5;
+    justify-content: space-around;
+}
+
+nav p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: flex;
+    cursor: pointer; 
+}
+
+ul li {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 40px;
+}
+
+body {
+    background-color: #fff8f8;
+}
+
+.posicionamiento {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: #fff8f8;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+
+.serviciosdisponibles {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    max-width: 1300px;
+    width: 90%;
+    margin: 40px auto;
+    background-color: #eae9e9;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 1px 2px 2px rgba(146, 143, 143, 0.8);
+    color: #0D3B2E;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    color: #0D3B2E;
+    margin-bottom: 15px;
+}
+
+.subtitulo-formulario {
+    background-color: transparent;
+    color: #0D3B2E;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 1px;
+}
+
+h2 {
+    color: #F5F5F5;
+    background-color: #39663e;
+    padding: 8px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto 20px auto; 
+}
+
+
+.Textoservicios {
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 20px;
+    color: #0D3B2E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    gap: 15px;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #0D3B2E;
+    font-size: 18px;
+}
+
+.selector {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background-color: hsl(61, 59%, 49%);
+    border-radius: 10px;
+    border-color: hsl(61, 59%, 49%);
+    padding: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #0D3B2E;
+    font-weight: bold;
+    cursor: pointer;
+    border-style: solid;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: hsl(61, 59%, 43%);
+}
+
+
+.asistencia, .accesibilidad {
+    max-width: 1020px;
+    margin: 40px auto;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0D3B2E;
+    font-size: 19px;
+    text-align: center; 
+    line-height: 1.6;
+}
+
+.serviciosabordo{
+    max-width: 1020px;
+    margin: 40px auto;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0D3B2E;
+    font-size: 20px;
+    text-align: center; 
+    line-height: 1.6;
+}
+
+
+.asistencia p, .accesibilidad p {
+    margin-bottom: 25px;
+    text-align: justify;
+    text-align-last: center; 
+}
+
+
+
+.button-servicios {
+    display: inline-block;
+    padding: 12px 40px;
+    margin-top: 10px;
+}
+
+
+.lista-servicios {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.lista-servicios li {
+    display: list-item; 
+    list-style-type: disc; 
+    font-size: 18px;
+    color: #0D3B2E;
+    padding: 8px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.linea-divisoria {
+    border: none;                  
+    height: 1px;                  
+    background-color: #d1d5db;   
+    margin: 40px auto;            
+    width: 85%;
+}
+
+
+footer {
+    background-color: hsl(60, 68%, 37%);
+    color: #AAAAAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin-top: 60px;
+}
+
+footer p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #F5F5F5;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;  
+        padding: 20px 0;         
+    }
+
+    nav p {
+        font-size: 25px;
+        padding: 0 0 10px 0;     
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;  
+        display: flex;  
+        justify-content: center;
+        gap: 20px;
+    }
+
+    ul li {
+        padding: 12px 0;        
+        font-size: 14px;
+    }
+
+    .posicionamiento {
+        margin-left: 40px;
+        font-size: 15px;
+    }
+
+    .serviciosdisponibles{
+        flex-direction: column;
+        padding: 20px;
+        max-width: 95%;
+        text-align: justify;
+    }
+
+    .Textoservicios{
+        width: 100%;
+        padding-left: 0;
+        font-size: 17px;
+    }
+
+    form {
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .subtitulo-formulario{
+        font-size: 20px;
+    }
+
+    h2 {
+        max-width: 95%;
+        font-size: 15px;
+    }
+
+
+    label{
+        margin-top: 20px;
+    }
+
+
+    .asistencia, .accesibilidad {
+        max-width: 95%;
+        font-size: 15px;
+    }
+
+    .asistencia p, .accesibilidad p {
+        text-align: justify;
+        text-align-last: left;
+    }
+
+    .serviciosabordo{
+        font-size: 15px;
+        text-align: justify;
+        max-width: 95%;
+    }
+
+    .lista-servicios li {
+        font-size: 15px;
+        margin-left: 75px;
+
+    }
+
+    .lista{
+        margin-left: 10px;
+        text-align: left;
+    }
+    
+    .accesib{
+        font-size: 15px;
+    }
+
+    .button-servicios {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;           
+        padding: 20px;           
+        text-align: center;      
+    }
+
+    footer p {
+        font-size: 14px;
+        line-height: 1.5;      
+        padding: 0;
+    }
+
+}

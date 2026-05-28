@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pasajes - RetiroConecta</title>
+    <link rel="stylesheet" href="pasajes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>Ruta 1</p>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pasajes.html">Pasajes</a></li>
+                <li><a href="recorridos.html">Recorridos</a></li>
+                <li><a href="servicios.html">Servicios disponibles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="posicionamiento">
+             <p>Terminal Retiro - La Plata / Pasajes</p>
+        </div>
+
+        <section class="CompraOnline">
+            <div class="TextoCompraOnline">
+                <h2>Compra Online</h2>
+                <p>¡Olvidate de las filas! Con nuestra plataforma de compra online, podés reservar tu pasaje en minutos desde la comodidad de tu hogar o mientras estás en movimiento. Simplemente seleccioná tu destino, elegí tu asiento y pagá de forma segura.</p>
+            </div>
+
+            <form action="FormularioOnline.html" method="post">
+                <label for="origen">Origen</label>
+                <select id="origen" name="origen" required class="selector">
+                    <option value="Retiro">Retiro</option>
+                    <option value="La Plata">La Plata</option>
+                </select>
+                <label for="destino">Destino</label>
+                <select id="destino" name="destino" required class="selector">
+                    <option value="La Plata">La Plata</option>
+                    <option value="Retiro">Retiro</option>
+                </select>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" min="2026-05-28" required class="selector">
+                <label for="asiento">Asiento</label>
+                <input type="number" id="asientos" name="asientos" min="1" max="4" required class="selector">
+                <button type="submit">Reservar Pasaje</button>
+            </form>
+        </section>
+
+
+        <section class="modificar-cancelar">
+            <div class="Textomodificar-cancelar">
+                <h2>Modificar o Cancelar Pasaje</h2>
+                <p>¿Necesitás cambiar la fecha, el asiento o cancelar tu viaje? Podés hacerlo hasta 24 horas antes de la salida programada. Ingresá tu número de reserva y los nuevos datos para gestionar tu pasaje sin inconvenientes.</p>
+            </div>
+
+            <form action="FormularioModificar.html" method="post">
+                <label for="nro-reserva">N° de Reserva</label>
+                <input type="text" id="nro-reserva" name="nro-reserva" placeholder="Ej: 00123" required class="selector">
+                <label for="nueva-fecha">Nueva Fecha</label>
+                <input type="date" id="nueva-fecha" name="nueva-fecha" min="2026-05-28" class="selector">
+                <label for="nuevo-asiento">Nuevo Asiento</label>
+                <input type="number" id="nuevo-asiento" name="nuevo-asiento" min="1" max="4" class="selector">
+                <label for="accion">Acción</label>
+                <select id="accion" name="accion" required class="selector">
+                    <option value="modificar">Modificar</option>
+                    <option value="cancelar">Cancelar</option>
+                </select>
+                <button class="cambios" type="submit">Confirmar cambios</button>
+            </form>
+        </section>
+
+        <hr class="linea-divisoria">
+
+      
+        <section class="horarios">
+            <h3>Horarios del servicio</h3>
+            <p>El servicio opera de lunes a domingos, incluyendo feriados, para garantizar la movilidad constante de los usuarios.</p>
+
+            <div class="frecuencia">
+                <h4>Frecuencia del transporte:</h4>
+                <p class="horas"><strong>Horas pico</strong> (06:00 a 09:00 y 16:00 a 20:00): Cada 15 minutos.</p>
+                <p class="horas"><strong>Horas valle</strong> (Resto del día): Cada 30 minutos.</p>
+                <p class="horas"><strong>Servicio nocturno</strong> (23:00 a 05:00): Cada 60 minutos.</p>
+            </div>
+
+            <h4 class="subtitulo-tabla">Tabla de horarios de salida: </h4>
+
+            <div class="contenedor-tabla">
+                <table class="tabla-horarios">
+                    <thead>
+                        <tr>
+                            <th>Salida desde Retiro</th>
+                            <th>Arribo est. Cruce Varela</th>
+                            <th>Llegada a La Plata</th>
+                            <th>Tipo de Servicio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06:00 h</td>
+                            <td>06:35 h</td>
+                            <td>07:10 h</td>
+                            <td>Rápido</td>
+                        </tr>
+                        <tr>
+                            <td>06:15 h</td>
+                            <td>06:50 h</td>
+                            <td>07:25 h</td>
+                            <td>Rápido</td>
+                        </tr>
+                        <tr>
+                            <td>06:30 h</td>
+                            <td>07:05 h</td>
+                            <td>07:40 h</td>
+                            <td>Rápido</td>
+                        </tr>
+                        <tr>
+                            <td>07:00 h</td>
+                            <td>07:35 h</td>
+                            <td>08:10 h</td>
+                            <td>Rápido</td>
+                        </tr>
+                        <tr>
+                            <td>08:00 h</td>
+                            <td>08:35 h</td>
+                            <td>09:10 h</td>
+                            <td>Rápido</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 h</td>
+                            <td>10:35 h</td>
+                            <td>11:10 h</td>
+                            <td>Normal</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 h</td>
+                            <td>12:35 h</td>
+                            <td>13:10 h</td>
+                            <td>Normal</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 h</td>
+                            <td>14:35 h</td>
+                            <td>15:10 h</td>
+                            <td>Normal</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 h</td>
+                            <td>16:35 h</td>
+                            <td>17:10 h</td>
+                            <td>Rápido</td>
+                        </tr>
+                        <tr>
+                            <td>18:00 h</td>
+                            <td>18:35 h</td>
+                            <td>19:10 h</td>
+                            <td>Rápido</td>
+                        </tr>
+                        <tr>
+                            <td>20:00 h</td>
+                            <td>20:35 h</td>
+                            <td>21:10 h</td>
+                            <td>Normal</td>
+                        </tr>
+                        <tr>
+                            <td>22:00 h</td>
+                            <td>22:35 h</td>
+                            <td>23:10 h</td>
+                            <td>Normal</td>
+                        </tr>
+                        <tr>
+                            <td>23:00 h</td>
+                            <td>23:35 h</td>
+                            <td>00:10 h</td>
+                            <td>Nocturno</td>
+                        </tr>
+                        <tr>
+                            <td>00:00 h</td>
+                            <td>00:35 h</td>
+                            <td>01:10 h</td>
+                            <td>Nocturno</td>
+                        </tr>
+                        <tr>
+                            <td>01:00 h</td>
+                            <td>01:35 h</td>
+                            <td>02:10 h</td>
+                            <td>Nocturno</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr class="linea-divisoria">
+
+        <section class="información">
+            <div class="info-pasajes">
+                <h5>Información sobre pasajes</h5>
+                <div class="contenedor-tarjetas">
+
+                    <article class="tarjetas">
+                        <h6>Pasaje Común</h6>
+                        <p>Viajá cómodo con asiento asignado, aire acondicionado y servicio a bordo. Disponible todos los días de la semana.</p>
+                    </article>
+
+                    <article class="tarjetas">
+                        <h6>Cancelaciones y cambios</h6>
+                        <p>Podés cancelar o modificar tu pasaje hasta 24 horas antes de la salida, desde esta sección o directamente en la boletería de la terminal.</p>
+                    </article>
+
+                    <article class="tarjetas">
+                        <h6>Medios de pago</h6>
+                        <p>Aceptamos tarjetas de crédito, débito y transferencia bancaria. El proceso de pago es 100% seguro.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="linea-divisoria">
+
+        <div class="finalpreguntas">
+            <p>¿Necesitás ayuda para comprar tu pasaje? Nuestro equipo de atención al cliente está disponible para asistirte en cada paso.</p>
+            <button class="atencion-cliente" type="button">Contactar atención al cliente</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p class="Derechos">© 2026 RetiroConecta - Ruta 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
