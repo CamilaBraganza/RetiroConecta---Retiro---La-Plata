@@ -264,6 +264,10 @@ h6{
     font-size: 17px;
 }
 
+.contenedor-tarjetas .tarjetas:nth-child(3) {
+    margin: 0 auto;
+}
+
 .finalpreguntas {
     color: #0D3B2E;
     text-align: center;
@@ -401,7 +405,78 @@ footer p{
         line-height: 1.5;      
         padding: 0;
     }
-
-
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    nav p {
+        font-size: 28px;
+        padding: 0 0 12px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 18px 0;
+    }
+
+    .posicionamiento {
+        margin-left: 80px;
+        font-size: 18px;
+    }
+
+    .trayecto {
+        flex-direction: column;
+        max-width: 92%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .texto-trayecto {
+        width: 100%;
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .recuadro-tiempo {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .contenedor-mapa-interactivo {
+        height: 360px;
+        padding: 15px;
+    }
+
+    .mapa, .información {
+        max-width: 92%;
+        margin: 30px auto;
+    }
+
+    .tarjetas {
+        max-width: 60%;
+        min-width: 220px;
+    }
+
+    .finalpreguntas {
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 18px;
+    }
+}
+
+
 

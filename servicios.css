@@ -347,8 +347,77 @@ footer p {
         line-height: 1.5;      
         padding: 0;
     }
-   
-
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    nav p {
+        font-size: 28px;
+        padding: 0 0 12px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 18px 0;
+    }
+
+    .posicionamiento {
+        margin-left: 80px;
+        font-size: 18px;
+    }
+
+    .serviciosdisponibles {
+        flex-direction: column;
+        max-width: 94%;
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+
+    .Textoservicios {
+        width: 100%;
+        font-size: 18px;
+        padding-left: 0;
+    }
+
+    form {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .subtitulo-formulario {
+        font-size: 20px;
+    }
+
+    .lista-servicios {
+        max-width: 70%;
+    }
+
+    .asistencia, .accesibilidad, .servicios {
+        max-width: 94%;
+        font-size: 18px;
+    }
+
+    .serviciosabordo {
+        max-width: 94%;
+    }
+
+    footer {
+        padding: 25px;
+    }
+}
 

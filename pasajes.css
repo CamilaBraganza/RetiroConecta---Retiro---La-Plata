@@ -312,7 +312,7 @@ h5{
 }
 
 h6{
-   color: #0D3B2E;
+   color: #23792d;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    margin-top: 5px;
    text-align: center;
@@ -324,7 +324,7 @@ h6{
 
 .contenedor-tarjetas{
     display: flex;
-    justify-content: space-between; 
+    justify-content: center;
     gap: 20px;                     
     margin-top: 20px;
     flex-wrap: wrap;
@@ -336,8 +336,8 @@ h6{
     padding: 25px;                  
     border-radius: 30px;                                  
     min-width: 260px;               
-    flex: 1 1 calc(.333% - 20px);
-    max-width: calc(33.333% - 20px);
+    flex: 1 1 280px;
+    max-width: 320px;
     text-align: center;    
     box-shadow: 1px 2px 2px rgba(146, 143, 143, 0.8);
     background-color: #eae9e9;
@@ -528,7 +528,104 @@ footer p{
         line-height: 1.5;      
         padding: 0;
     }
-
-
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    nav p {
+        font-size: 28px;
+        padding: 0 0 12px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 18px 0;
+    }
+
+    .posicionamiento {
+        margin-left: 80px;
+        font-size: 18px;
+    }
+
+    h2{
+        text-align: center;
+        max-width: 100%;
+
+    }
+
+   .CompraOnline {
+        flex-direction: column;
+        margin: 25px auto;
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .TextoCompraOnline {
+        max-width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    form {
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 0;
+        gap: 12px;
+    }
+
+    label {
+        font-size: 17px;
+    }
+
+    .modificar-cancelar {
+        max-width: 92%;
+        margin: 30px auto;
+        padding: 20px;
+        gap: 0px;
+    }
+
+    .Textomodificar-cancelar {
+        width: 50%;
+        padding-left: 15px;
+    }
+
+    
+
+    .horarios, .información {
+        max-width: 92%;
+        margin: 30px auto;
+    }
+
+    .contenedor-tarjetas {
+        gap: 18px;
+       
+    }
+
+    .tarjetas {
+        min-width: 580px;
+        max-width: calc(50% - 18px);
+        justify-content: center;
+    }
+
+    .finalpreguntas {
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 18px;
+    }
+}
+
 
