@@ -227,7 +227,7 @@ h2{
 .linea-divisoria {
   border: none;                  
   height: 1px;                  
-  background-color: #d1d5db;   
+  background-color: #c0c5c8;  
   margin: 40px auto;            
   width: 85%;
 }
@@ -314,11 +314,10 @@ h5{
 h6{
    color: #0D3B2E;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 20px;
    margin-top: 5px;
    text-align: center;
    margin-bottom: 10px;
-   
+   font-size: 18px;
 
 }
 
@@ -337,7 +336,7 @@ h6{
     padding: 25px;                  
     border-radius: 30px;                                  
     min-width: 260px;               
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(.333% - 20px);
     max-width: calc(33.333% - 20px);
     text-align: center;    
     box-shadow: 1px 2px 2px rgba(146, 143, 143, 0.8);
@@ -404,14 +403,12 @@ footer p{
         padding: 0;  
         display: flex;  
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px
     }
 
     ul li {
-        padding: 8px 6px;        
-        font-size: 12px;
-        white-space: nowrap;
+        padding: 12px 0;        
+        font-size: 14px;
     }
 
     nav a {
@@ -425,28 +422,29 @@ footer p{
        
     }
     
-    .CompraOnline {
+   .CompraOnline {
         flex-direction: column;
         margin: 20px auto;    
         padding: 15px;
-        max-width: 90%;
+        max-width: 85%;
     }
 
     .TextoCompraOnline {
         max-width: 100%;
-        padding: 10px 0;
+        padding: 10px 10px;
         text-align: left;
         font-size: 17px;
-        text-align: justify;
     }
 
     
     form {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
+        align-items: left;
         padding: 10px 0;
         gap: 10px;
+        margin-left: 45px;
     }
 
     label {
@@ -465,126 +463,72 @@ footer p{
         margin-top: 10px;
     }
 
-}
-
-@media (max-width: 420px) {
-    nav p {
-        font-size: 20px;
-        padding: 0 0 8px 0;
-    }
-
-    ul li {
-        padding: 6px 4px;        
-        font-size: 10px;
-    }
-
-    .posicionamiento {
-        margin-left: 20px;
-        font-size: 13px;
-    }
-
-    .CompraOnline {
-        padding: 10px;
-    }
-
-    .TextoCompraOnline {
-        font-size: 14px;
-    }
-
-    form {
-        padding: 10px 0;
-        gap: 8px;
-    }
-
-    label {
-        font-size: 13px;
-    }
-
-    .selector {
-        padding: 6px;
-        font-size: 13px;
-    }
-
-    button {
-        font-size: 13px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-
-    .modificar-cancelar {
+    .modificar-cancelar{
         flex-direction: column;
-        padding: 10px;
-        max-width: 95%;
-    }
-
-    .Textomodificar-cancelar {
-        max-width: 100%;
-        font-size: 14px;
-    }
-
-    .horarios {
-        font-size: 14px;
-        max-width: 95%;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    h5 {
-        font-size: 16px;
-    }
-
-    .tarjetas {
+        margin: 20px auto;    
         padding: 15px;
-        font-size: 14px;
-        min-width: 200px;
+        max-width: 85%;
     }
 
-    
-    .finalpreguntas {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 20px;
+    .Textomodificar-cancelar{
+        width: 95%;
+        padding: 10px 10px;
+        text-align: left;
+        font-size: 17px;
+
     }
 
-}
-
-    
-
-   
-    .horarios {
-    padding: 20px 25px; 
-    text-align: left; 
-    font-size: 17px; 
+    .modificar-cancelar form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: left;
+        padding: 10px 0;
+        gap: 10px;
+        margin-left: 45px;
     }
 
-    h3 {
-        font-size: 19px;
-    }
 
-    h5{
-      font-size: 19px;
-    }
 
-    h6{
-       font-size: 16px;
+    .horarios{
+        max-width: 85%;
     }
 
     .contenedor-tarjetas {
-        flex-direction: row;
+        flex-direction: column;
         gap: 15px;
+        
     }
 
     .tarjetas {
-        flex: 1 1 calc(.333% - 15px);
-        max-width: calc(33.333% - 15px);
+        max-width: 100%;
+        max-width: 85%;
+        align-self: center;
+    }
+    
+    .finalpreguntas{ 
         font-size: 17px;
+        width: 80%;
+        margin: 50px;
     }
 
+
     
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;           
+        padding: 20px;           
+        text-align: center;      
+    }
+
+    footer p {
+        font-size: 14px;
+        line-height: 1.5;      
+        padding: 0;
+    }
 
 
+}
 
