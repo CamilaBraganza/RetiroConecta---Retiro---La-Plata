@@ -43,28 +43,49 @@ ul li{
 
 
 body{
-    background-color: #fff8f8;
+    background-color: #eae5de;
 }
 
 
 .posicionamiento{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    background-color: #fff8f8;
     margin-left: 200px;
     margin-top: 20px;
 }
 
 button{
-    background-color: hsl(61, 59%, 49%);
-    border-radius: 10px;
-    border-color: hsl(61, 59%, 49%);
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    --btn-bg: hsl(61, 59%, 49%);
+    --btn-bg-hover: hsl(61, 59%, 43%);
+    --btn-shadow: rgba(57,102,62,0.18);
+    background-color: var(--btn-bg);
     color: #0D3B2E;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 6px 12px var(--btn-shadow);
+    transition: background-color 200ms ease, box-shadow 200ms ease, transform 120ms ease;
+}
+
+button:hover,
+button:focus{
+    background-color: var(--btn-bg-hover);
+    box-shadow: 0 10px 18px rgba(57,102,62,0.28);
+    transform: translateY(-2px);
+}
+
+button:active{
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(57,102,62,0.14);
+}
+
+button:focus{
+    outline: 3px solid rgba(57,102,62,0.12);
+    outline-offset: 3px;
 }
 
 .trayecto{
@@ -79,7 +100,7 @@ button{
     margin: 40px auto;
     background-color: #eae9e9;
     border-radius: 30px;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 1px 2px 2px rgba(146, 143, 143, 0.8);
     color: #0D3B2E;
 }
@@ -114,6 +135,8 @@ h2{
 h3{
   margin-top: 10px;
   margin-bottom: 10px; 
+  text-align: center;
+  font-size: 26px;
 }
 
 h4{
@@ -128,9 +151,15 @@ h4{
     font-size: 17px;
 }
 
+.condiciones{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
 .recuadro-tiempo {
-    width: 25%;
-    padding: 35px;
+    width: 20%;
+    padding: 15px;
     text-align: center;
     color: #F5F5F5;
     background-color: #39663e;
@@ -240,7 +269,6 @@ h6{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    font-weight: bold;
     min-width: 300px;
     margin-left: 100px;
     margin-right: 100px;
@@ -262,7 +290,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 90px;
-    
+    margin-top: 60px;
 }
 
 
@@ -292,12 +320,14 @@ footer p{
         padding: 0;  
         display: flex;  
         justify-content: center;
-        gap: 20px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     ul li {
-        padding: 12px 0;        
-        font-size: 14px;
+        padding: 8px 6px;        
+        font-size: 12px;
+        white-space: nowrap;
     }
 
     nav a {
@@ -337,6 +367,70 @@ footer p{
         font-size: 19px;
     }
 
+}
+
+@media (max-width: 420px) {
+
+    nav p {
+        font-size: 20px;
+        padding: 0 0 8px 0;
+    }
+
+    ul li {
+        padding: 6px 4px;        
+        font-size: 12px;
+    }
+
+    .posicionamiento {
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .trayecto {
+        padding: 20px 10px;
+    }
+
+    .texto-trayecto {
+        font-size: 14px;
+    }
+
+    .ancho{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+
+    .recuadro-tiempo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 65%;
+
+    }
+
+    .tiempo{
+        font-size: 13px;
+    }
+
+    .condiciones{
+        font-size: 11px;
+    }
+    
+
     .horarios {
         padding: 20px 25px; 
         text-align: left; 
@@ -355,17 +449,16 @@ footer p{
         
     }
 
-    h3 {
-        font-size: 19px;
-        margin-left: 25px;
-    }
-
     h5{
       font-size: 19px;
     }
 
     h6{
        font-size: 20px;
+    }
+
+    .punto{
+        font-size:18px;
     }
 
     .contenedor-tarjetas {
@@ -390,18 +483,4 @@ footer p{
         padding-right: 0;
     }
 
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;           
-        padding: 20px;           
-        text-align: center;      
-    }
-
-    footer p {
-        font-size: 14px;
-        line-height: 1.5;      
-        padding: 0;
-    }
-}
+ }

@@ -38,13 +38,12 @@ ul li {
 }
 
 body {
-    background-color: #fff8f8;
+    background-color: #eae5de;
 }
 
 .posicionamiento {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    background-color: #fff8f8;
     margin-left: 200px;
     margin-top: 20px;
 }
@@ -59,7 +58,7 @@ body {
     text-align: justify;
     max-width: 1300px;
     width: 90%;
-    margin: 40px auto;
+    margin: 30px auto;
     background-color: #eae9e9;
     border-radius: 30px;
     padding: 30px;
@@ -87,21 +86,19 @@ h1 {
 }
 
 h2 {
-    color: #F5F5F5;
-    background-color: #39663e;
-    padding: 8px 15px;
+    color: #0D3B2E;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 23px;
-    text-align: center;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 0 auto 20px auto; 
+    
 }
 
 
 .Textoservicios {
-    max-width: 600px;
+    max-width: 700px;
     padding-left: 20px;
+}
+
+.micro{
+    padding-bottom: 15px;
 }
 
 
@@ -132,66 +129,78 @@ label {
 }
 
 button {
-    background-color: hsl(61, 59%, 49%);
+    --btn-bg: hsl(61, 59%, 49%);
+    --btn-bg-hover: hsl(61, 59%, 43%);
+    --btn-shadow: rgba(57,102,62,0.18);
+    background-color: var(--btn-bg);
+    color: #0D3B2E;
+    border: none;
     border-radius: 10px;
-    border-color: hsl(61, 59%, 49%);
-    padding: 12px;
+    padding: 10px 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    color: #0D3B2E;
     font-weight: bold;
     cursor: pointer;
-    border-style: solid;
-    transition: background-color 0.2s;
+    box-shadow: 0 6px 12px var(--btn-shadow);
+    transition: background-color 200ms ease, box-shadow 200ms ease, transform 120ms ease;
 }
 
-button:hover {
-    background-color: hsl(61, 59%, 43%);
+button:hover,
+button:focus{
+    background-color: var(--btn-bg-hover);
+    box-shadow: 0 10px 18px rgba(57,102,62,0.28);
+    transform: translateY(-2px);
 }
 
-
-.asistencia, .accesibilidad {
-    max-width: 1020px;
-    margin: 40px auto;
-    padding: 10px 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #0D3B2E;
-    font-size: 19px;
-    text-align: center; 
-    line-height: 1.6;
+button:active{
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(57,102,62,0.14);
 }
 
-.serviciosabordo{
-    max-width: 1020px;
-    margin: 40px auto;
-    padding: 10px 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #0D3B2E;
-    font-size: 20px;
-    text-align: center; 
-    line-height: 1.6;
+button:focus{
+    outline: 3px solid rgba(57,102,62,0.12);
+    outline-offset: 3px;
 }
-
-
-.asistencia p, .accesibilidad p {
-    margin-bottom: 25px;
-    text-align: justify;
-    text-align-last: center; 
-}
-
-
-
-.button-servicios {
+    
+.button-servicios,
+.button-servicios button {
     display: inline-block;
-    padding: 12px 40px;
-    margin-top: 10px;
+    width: auto;
+    max-width: 380px;
+    margin-top: 20px;
 }
 
+
+
+.asistencia, .accesibilidad, .servicios {
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0D3B2E;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.asistencia h2,
+.accesibilidad h2,
+.servicios h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+
+
+.serviciosabordo {
+    font-size: 22px;
+}
 
 .lista-servicios {
     text-align: left;
-    max-width: 800px;
     margin: 20px auto;
+    max-width: 600px;
 }
 
 .lista-servicios li {
@@ -230,7 +239,6 @@ footer p {
 }
 
 
-
 @media (max-width: 768px) {
     nav {
         flex-direction: column;  
@@ -248,12 +256,14 @@ footer p {
         padding: 0;  
         display: flex;  
         justify-content: center;
-        gap: 20px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     ul li {
-        padding: 12px 0;        
-        font-size: 14px;
+        padding: 8px 6px;        
+        font-size: 12px;
+        white-space: nowrap;
     }
 
     .posicionamiento {
@@ -288,6 +298,70 @@ footer p {
         font-size: 20px;
     }
 
+}
+
+@media (max-width: 420px) {
+    nav p {
+        font-size: 20px;
+        padding: 0 0 8px 0;
+    }
+
+    ul li {
+        padding: 6px 4px;        
+        font-size: 10px;
+    }
+
+    .posicionamiento {
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .serviciosdisponibles {
+        padding: 15px;
+    }
+
+    .Textoservicios {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 10px 0;
+        gap: 8px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .selector {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .asistencia, .accesibilidad, .servicios {
+        font-size: 13px;
+        max-width: 95%;
+    }
+
+    .serviciosabordo {
+        font-size: 17px;
+        max-width: 95%;
+    }
+
+    .lista-servicios li {
+        font-size: 13px;
+        margin-left: 50px;
+    }
+}
+
     h2 {
         max-width: 95%;
         font-size: 15px;
@@ -299,26 +373,20 @@ footer p {
     }
 
 
-    .asistencia, .accesibilidad {
-        max-width: 95%;
-        font-size: 15px;
-    }
-
-    .asistencia p, .accesibilidad p {
-        text-align: justify;
-        text-align-last: left;
+    .asistencia p, .accesibilidad p, .servicios p {
+        text-align-last: center;
+        
     }
 
     .serviciosabordo{
-        font-size: 15px;
-        text-align: justify;
+        font-size: 18px;
         max-width: 95%;
     }
 
     .lista-servicios li {
-        font-size: 15px;
+        font-size: 18px;
         margin-left: 75px;
-
+    
     }
 
     .lista{
@@ -327,26 +395,13 @@ footer p {
     }
     
     .accesib{
-        font-size: 15px;
+        font-size: 18px;
+        max-width: 900px;
+        margin-left: 20px;
+        margin-top: 6px;
     }
 
     .button-servicios {
         width: 100%;
     }
 
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;           
-        padding: 20px;           
-        text-align: center;      
-    }
-
-    footer p {
-        font-size: 14px;
-        line-height: 1.5;      
-        padding: 0;
-    }
-
-}

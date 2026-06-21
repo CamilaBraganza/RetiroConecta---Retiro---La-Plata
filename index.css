@@ -46,7 +46,7 @@ video{
 }
 
 body{
-    background-color: #fff8f8;
+    background-color: #eae5de;
 }
 
 h1{
@@ -61,7 +61,7 @@ h1{
 }
 
 .heroflotante{
-    color: #ffffff;
+    color: #0D3B2E;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
     font-weight: bold;
@@ -97,6 +97,9 @@ h1{
 }
 
 button{
+     --btn-bg: hsl(61, 59%, 49%);
+    --btn-bg-hover: hsl(61, 59%, 43%);
+    --btn-shadow: rgba(57,102,62,0.18);
     background-color: hsl(61, 59%, 49%);
     border-radius: 10px;
     border-color: hsl(61, 59%, 49%);
@@ -107,8 +110,16 @@ button{
     font-weight: bold;
     cursor: pointer;
     grid-column: span 4;
+    box-shadow: 0 6px 12px var(--btn-shadow);
+    transition: background-color 200ms ease, box-shadow 200ms ease, transform 120ms ease;
    
-    
+}
+
+button:hover,
+button:focus{
+    background-color: var(--btn-bg-hover);
+    box-shadow: 0 10px 18px rgba(57,102,62,0.28);
+    transform: translateY(-2px);
 }
 
 form{
@@ -255,14 +266,16 @@ h4{
 }
 
 h6{
-   color: #0D3B2E;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 20px;
-   margin-top: 5px;
-   text-align: center;
-   margin-bottom: 10px;
-   
-
+   color: #F5F5F5;
+    background-color: #39663e;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 500px;
+    border-color: #39663e;
+    margin-bottom: 20px;
 }
 
 .Preguntas{
@@ -325,7 +338,6 @@ h5{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    font-weight: bold;
     min-width: 300px;
     margin-left: 100px;
     margin-right: 100px;
@@ -339,7 +351,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 90px;
-    
+    margin-top: 60px;
 }
 
 
