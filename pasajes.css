@@ -403,12 +403,13 @@ footer p{
         padding: 0;  
         display: flex;  
         justify-content: center;
-        gap: 20px
+        align-items: center;
+        gap: 10px
     }
 
     ul li {
         padding: 12px 0;        
-        font-size: 14px;
+        font-size: 12px;
     }
 
     nav a {
@@ -498,12 +499,14 @@ footer p{
         flex-direction: column;
         gap: 15px;
         
+        
     }
 
     .tarjetas {
-        max-width: 100%;
         max-width: 85%;
         align-self: center;
+        flex: none;
+        
     }
     
     .finalpreguntas{ 
